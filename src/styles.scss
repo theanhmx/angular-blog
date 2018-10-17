@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables.scss";
+
+html {
+	font-size: 10px;
+	font-family: SSPro;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+}
