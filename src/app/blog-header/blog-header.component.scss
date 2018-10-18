@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .blog-header {
 	display: grid;
 	grid-template-columns: 10rem 1fr;
@@ -12,4 +14,15 @@ app-hero-image {
 app-avatar {
 	grid-column: 1/1;
   grid-row: 1;
+}
+
+.blog-header--content {
+	grid-row: 1;
+  grid-column: 2;
+}
+
+.blog-title {
+	font-size: 5rem;
+	line-height: 0;
+	color: $primaryTextColor;
 }
