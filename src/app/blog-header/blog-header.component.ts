@@ -11,5 +11,4 @@ export class BlogHeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

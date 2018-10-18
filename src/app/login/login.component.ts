@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   submit(): void {
     this.authService.login(this.email, this.password).then(value => {
-      console.log('Nice, it worked!', Router);
+      console.log('Nice, it worked!', value);
       this.router.navigateByUrl('/setting');
     }).catch(err => {
       console.log('Something went wrong:',err.message);
