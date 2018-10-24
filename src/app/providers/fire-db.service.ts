@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FireDbService {
-  items: Observable<any[]>;
+  blog: Observable<any>;
 
   constructor(db: AngularFireDatabase) {
-  	console.log('constructor called');
+  	this.blog = db.object('blog').valueChanges();
   }
 }
